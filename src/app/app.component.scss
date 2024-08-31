@@ -1,0 +1,128 @@
+/* Example CSS to center content and style text */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+  }
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .animated-textfadeInOut {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    animation: fadeInOut 3s infinite;
+    text-align: center;
+  }
+  @keyframes scaleInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .animated-textscaleInOut {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    animation: scaleInOut 3s infinite;
+    text-align: center;
+  }
+  @keyframes brightnessChange {
+    0% { filter: brightness(100%); }
+    50% { filter: brightness(150%); }
+    100% { filter: brightness(100%); }
+  }
+  
+  .animated-textbrightness {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    animation: brightnessChange 3s infinite;
+    text-align: center;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .animated-textbounce {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    animation: bounce 2s infinite;
+    text-align: center;
+  }
+  @keyframes combinedAnimation {
+    0% {
+      transform: translateY(0);
+      filter: brightness(100%);
+    }
+    50% {
+      transform: translateY(-30px);
+      filter: brightness(150%);
+    }
+    100% {
+      transform: translateY(0);
+      filter: brightness(100%);
+    }
+  }
+  
+  .animated-textcombined {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    animation: combinedAnimation 3s infinite;
+    text-align: center;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animated-textpulse {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    animation: pulse 2s infinite;
+    text-align: center;
+  }
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animated-text span {
+    display: inline-block;
+    animation: rotate360 2s infinite linear;
+  }
+      
